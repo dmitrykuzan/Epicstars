@@ -8,7 +8,6 @@ export const Typography = (props) => {
     variant,
     upperCase,
     center,
-    dangerouslySetInnerHTML,
     children,
     ...rest
   } = props;
@@ -27,14 +26,18 @@ export const Typography = (props) => {
     };
 
     const WEIGHT = {
+      300: " w-300",
       400: " w-400",
+      400: " w-500",
       600: " w-600",
       700: " w-700",
+      800: " w-800",
     };
 
     const COLOR = {
-      black: " black",
       light: " light",
+      black: " black",
+      blue: " blue",
       error: " error",
     };
 

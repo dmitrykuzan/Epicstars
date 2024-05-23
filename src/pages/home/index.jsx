@@ -1,9 +1,10 @@
-import { Hero } from "./sections";
+import { Hero, Services } from "./sections";
 
 export const Home = () => {
   return (
     <>
       <Hero />
+      <Services />
     </>
   );
 };

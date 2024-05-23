@@ -1,7 +1,9 @@
 export const MENU = {
-  one: "/#anchor",
+  help: "/#help",
 
-  two: "/#anchor",
+  blog: "/#blog",
 
-  three: "/#anchor",
+  study: "/#study",
+
+  catalog: "/#catalog",
 };

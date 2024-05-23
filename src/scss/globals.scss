@@ -14,20 +14,31 @@
 // </ОБНУЛЕНИЕ>===============================================================
 
 // <ПЕРЕМЕННЫЕ>===============================================================
-$containerWidth: 120rem;
+$containerWidth: 121rem;
 
 :root {
   // Base
-  --font-family: "", sans-serif;
+  --font-family: "Poppins", sans-serif;
   --font-weight: 400;
-  --content-width: 117rem;
+  --content-width: 118rem;
   --container-offset: 1.5rem;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --transition: 0.3s;
 
   // Colors
   --clr-default-100: #fff;
+  --clr-default-150: #e3e3e5;
+  --clr-default-200: #dfe3ed;
+  --clr-default-250: #d3d3d3;
+  --clr-default-300: rgba(255, 255, 255, 0.4);
+  --clr-default-400: #333333;
   --clr-default-900: #000000;
+
+  --clr-shadow-400: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  --clr-shadow-accent: 0px 1px 10px 0px rgb(119, 157, 216);
+  --clr-shadow-hover: 0px 3px 18px 0px rgb(119, 157, 216);
+  --clr-accent-400: #789dd8;
+  --clr-accent-500: #1074d8;
 }
 
 // </ПЕРЕМЕННЫЕ>==============================================================
@@ -60,6 +71,7 @@ main {
 .wrapper {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   width: 100%;
   min-width: 32rem;
   min-height: 100%;
@@ -85,9 +97,16 @@ main {
 @import "./ui";
 @import "./stack";
 @import "./components/ui/typography";
+@import "./components/ui/menu";
+@import "./components/ui/button";
+@import "./components/ui/language";
+@import "./components/ui/burger";
+@import "./components/ui/burger-menu";
+
 // Components - UI
 
 // Components - Cards
+@import "./components/cards/services-card";
 // Components - Cards
 
 // Components - Sections
@@ -100,4 +119,5 @@ main {
 
 // Components - Pages
 @import "./components/pages/home/hero";
+@import "./components/pages/home/services";
 // Components - Pages

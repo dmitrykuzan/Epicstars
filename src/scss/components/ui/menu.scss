@@ -1,0 +1,48 @@
+.menu {
+  &__list {
+    gap: 3rem;
+  }
+
+  &__item {
+    position: relative;
+
+    &-link {
+      font-family: Lato, sans-serif;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 133%;
+      color: var(--clr-default-100);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -0.4rem;
+      width: 0;
+      height: 0.2rem;
+      background-color: var(--clr-accent-400);
+      transform: translateX(-50%);
+      transition: width var(--transition);
+    }
+
+    @media (hover) {
+      &:hover::before {
+        width: 100%;
+        transition: width var(--transition);
+      }
+    }
+
+    &:active a {
+      color: var(--clr-accent-400);
+    }
+  }
+
+  &-auth {
+    .button--transparent {
+      span {
+        color: var(--clr-default-900);
+      }
+    }
+  }
+}

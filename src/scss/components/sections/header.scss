@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  z-index: 2;
+  padding-top: 3rem;
+
+  &__left {
+    gap: 3rem;
+  }
+
+  &__language {
+    @media (max-width: em(960)) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    @media (max-width: em(960)) {
+      display: none;
+    }
+  }
+
+  &__auth {
+    gap: 3rem;
+
+    @media (max-width: em(960)) {
+      display: none;
+    }
+  }
+}

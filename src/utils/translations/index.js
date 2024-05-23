@@ -7,5 +7,5 @@ const createTranslation = (locale) =>
   }, {});
 
 export const translations = {
-  en: createTranslation("en"),
+  ru: createTranslation("ru"),
 };

@@ -1,7 +1,8 @@
 export const navigation = {
-  en: {
-    one: "1",
-    two: "2",
-    three: "3",
+  ru: {
+    help: "Помощь",
+    blog: "Блог",
+    study: "Обучение",
+    catalog: "Каталог блогеров",
   },
 };

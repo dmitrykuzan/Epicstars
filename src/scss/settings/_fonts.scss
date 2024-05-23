@@ -1,4 +1,32 @@
 @font-face {
+  src: url("/fonts/Lato-Black.woff2") format("woff2");
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/fonts/Lato-Bold.woff2") format("woff2");
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/fonts/Lato-Light.woff2") format("woff2");
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/fonts/Lato-Medium.woff2") format("woff2");
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   src: url("/fonts/Lato-Regular.woff2") format("woff2");
   font-family: "Lato";
   font-weight: 400;
@@ -6,29 +34,43 @@
   font-display: swap;
 }
 @font-face {
-  src: url("/fonts/Onest-Medium.woff2") format("woff2");
-  font-family: "Onest";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/fonts/Onest-Regular.woff2") format("woff2");
-  font-family: "Onest";
+  src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("/fonts/OpenSauceOne-Medium.woff2") format("woff2");
-  font-family: "Open Sauce One";
+  src: url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/fonts/Poppins-Bold.woff2") format("woff2");
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/fonts/Poppins-Medium.woff2") format("woff2");
+  font-family: "Poppins";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("/fonts/OpenSauceOne-Regular.woff2") format("woff2");
-  font-family: "Open Sauce One";
+  src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+  font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
   font-display: swap;

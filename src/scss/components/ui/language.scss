@@ -1,0 +1,14 @@
+.language {
+  gap: 1rem;
+
+  &__separator {
+    display: block;
+    width: 0.2rem;
+    height: 1.8rem;
+    background-color: var(--clr-default-300);
+  }
+
+  &__button {
+    text-transform: uppercase;
+  }
+}

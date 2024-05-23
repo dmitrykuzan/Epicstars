@@ -1,0 +1,27 @@
+.services__card {
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  height: 100%;
+  box-shadow: var(--clr-shadow-400);
+  background-color: var(--clr-default-100);
+
+  &-wrapper {
+    gap: 2rem;
+    height: 100%;
+  }
+
+  &-text {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.6rem;
+    line-height: 133%;
+  }
+
+  &-title {
+  }
+
+  &-button {
+    margin-top: auto;
+    font-weight: 500;
+    color: var(--clr-accent-500);
+  }
+}
