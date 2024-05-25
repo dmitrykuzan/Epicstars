@@ -7,3 +7,25 @@
   white-space: nowrap;
   clip: rect(0 0 0 0);
 }
+
+.card {
+  border-radius: 0.8rem;
+  padding: 1.3rem;
+  box-shadow: var(--clr-shadow-400);
+  background-color: var(--clr-default-100);
+}
+
+.error-message,
+.success-message {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}

@@ -4,6 +4,7 @@
   justify-content: center;
   width: max-content;
   color: var(--clr-default-100);
+  transition: opacity var(--transition);
 
   &--transparent {
     width: max-content;
@@ -32,6 +33,7 @@
 
     span {
       font-family: Lato, sans-serif;
+      font-weight: 500;
       font-size: 1.2rem;
     }
 
@@ -43,9 +45,36 @@
     }
   }
 
+  &--blue {
+    border-radius: 1rem;
+    min-width: 15rem;
+    min-height: 4.5rem;
+    background-color: var(--clr-accent-500);
+    transition: background-color var(--transition);
+
+    span {
+      font-family: Open Sans, sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+
+    @media (hover) {
+      &:hover {
+        background-color: var(--clr-accent-400);
+        transition: background-color var(--transition);
+      }
+    }
+  }
+
   &--uppercase {
     span {
       text-transform: uppercase;
     }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    transition: opacity var(--transition);
+    pointer-events: none;
   }
 }

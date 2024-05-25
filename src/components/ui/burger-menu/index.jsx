@@ -5,12 +5,14 @@ import { useRef } from "react";
 export const BurgerMenu = (props) => {
   const { isMenuOpen, onClose } = props;
 
-  //useClickOutside
+  //useClickOutside - хук для закриття чого завгодно, якщо клік був не по єлементу в який передали ref
   const ref = useRef();
-
   useOnClickOutside(ref, onClose);
+  //useClickOutside - хук для закриття чого завгодно, якщо клік був не по єлементу в який передали ref
 
+  // Використовуємо хук для перекладу
   const t = useTranslation();
+  // Використовуємо хук для перекладу
 
   return (
     <div

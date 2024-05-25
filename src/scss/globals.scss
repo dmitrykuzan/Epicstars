@@ -31,7 +31,9 @@ $containerWidth: 121rem;
   --clr-default-200: #dfe3ed;
   --clr-default-250: #d3d3d3;
   --clr-default-300: rgba(255, 255, 255, 0.4);
+  --clr-default-350: #999999;
   --clr-default-400: #333333;
+  --clr-default-600: rgba(0, 0, 0, 0.25);
   --clr-default-900: #000000;
 
   --clr-shadow-400: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
@@ -56,6 +58,14 @@ body {
     touch-action: none;
     overscroll-behavior: none;
 
+    .wrapper {
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+      }
+    }
+
     .header {
       overflow: initial;
     }
@@ -75,6 +85,22 @@ main {
   width: 100%;
   min-width: 32rem;
   min-height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-default-600);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+    pointer-events: none;
+    backdrop-filter: blur(0.25rem);
+  }
 
   &.no-overflow {
     overflow: initial;
@@ -99,14 +125,17 @@ main {
 @import "./components/ui/typography";
 @import "./components/ui/menu";
 @import "./components/ui/button";
+@import "./components/ui/input";
 @import "./components/ui/language";
 @import "./components/ui/burger";
 @import "./components/ui/burger-menu";
+@import "./components/ui/skill-progress";
 
 // Components - UI
 
 // Components - Cards
 @import "./components/cards/services-card";
+@import "./components/cards/experience-card";
 // Components - Cards
 
 // Components - Sections
@@ -120,4 +149,8 @@ main {
 // Components - Pages
 @import "./components/pages/home/hero";
 @import "./components/pages/home/services";
+@import "./components/pages/home/about";
+@import "./components/pages/home/choise";
+@import "./components/pages/home/experience";
+@import "./components/pages/home/career";
 // Components - Pages

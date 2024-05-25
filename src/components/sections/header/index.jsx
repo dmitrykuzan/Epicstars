@@ -17,9 +17,11 @@ export const Header = () => {
   const openMenu = () => {
     setIsMenuOpen(true);
   };
+  //**Menu burger state
 
-  //translation
+  // Використовуємо хук для перекладу
   const t = useTranslation();
+  // Використовуємо хук для перекладу
 
   return (
     <>

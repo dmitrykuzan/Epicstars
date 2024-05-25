@@ -1,11 +1,8 @@
 import Link from "next/link";
-import { useTransition } from "react";
 
 export const Logo = (props) => {
   //props
   const { src, className } = props;
-
-  const t = useTransition();
 
   const logoClassName = className ? `logo ${className}` : "logo";
 

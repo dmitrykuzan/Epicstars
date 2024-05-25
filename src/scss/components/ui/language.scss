@@ -1,14 +1,27 @@
 .language {
-  gap: 1rem;
-
-  &__separator {
-    display: block;
-    width: 0.2rem;
-    height: 1.8rem;
-    background-color: var(--clr-default-300);
-  }
+  gap: 1.5rem;
 
   &__button {
     text-transform: uppercase;
+    color: var(--clr-default-300);
+
+    &:first-child {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -0.9rem;
+        top: 50%;
+        width: 0.2rem;
+        height: 1.8rem;
+        background-color: var(--clr-default-300);
+        transform: translateY(-50%);
+      }
+    }
+
+    &.active {
+      color: var(--clr-default-100);
+    }
   }
 }

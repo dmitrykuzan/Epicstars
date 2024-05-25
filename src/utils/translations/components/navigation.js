@@ -5,4 +5,10 @@ export const navigation = {
     study: "Обучение",
     catalog: "Каталог блогеров",
   },
+  en: {
+    help: "Help",
+    blog: "Blog",
+    study: "Study",
+    catalog: "Blogger catalog",
+  },
 };

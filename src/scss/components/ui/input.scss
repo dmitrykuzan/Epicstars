@@ -1,0 +1,35 @@
+.input {
+  position: relative;
+  overflow: hidden;
+  border: 0.2rem solid var(--clr-default-200);
+  min-height: 4.5rem;
+  max-width: 27rem;
+  background-color: var(--clr-default-100);
+  transition: border var(--transition);
+
+  input {
+    outline: none;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    min-height: 4.5rem;
+    color: var(--clr-default-900);
+    background-color: transparent;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      color: var(--clr-default-350);
+    }
+  }
+
+  &:focus-within {
+    border: 0.2rem solid var(--clr-accent-400);
+    transition: border var(--transition);
+  }
+
+  &.error {
+    border: 0.2rem solid var(--clr-primary-600);
+  }
+}

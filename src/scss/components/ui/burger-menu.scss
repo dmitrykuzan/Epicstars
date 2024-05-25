@@ -63,6 +63,10 @@
   &-language {
     .language__button {
       color: var(--clr-default-900);
+
+      &.active {
+        color: var(--clr-accent-500);
+      }
     }
   }
 

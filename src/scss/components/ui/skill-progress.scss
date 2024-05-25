@@ -1,0 +1,19 @@
+.skill-progress {
+  gap: 1.5rem;
+
+  &__name {
+    gap: 2rem;
+  }
+
+  &__bar {
+    width: 100%;
+    height: 0.7rem;
+    background-color: var(--clr-default-150);
+
+    span {
+      display: block;
+      height: 0.7rem;
+      background-color: var(--clr-accent-500);
+    }
+  }
+}

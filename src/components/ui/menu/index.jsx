@@ -4,6 +4,8 @@ import { MENU } from "@utils";
 
 export const Menu = (props) => {
   const { className, onClose } = props;
+
+  // Використовуємо хук для перекладу
   const t = useTranslation();
 
   return (

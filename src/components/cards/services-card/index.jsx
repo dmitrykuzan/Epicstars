@@ -6,8 +6,9 @@ export const ServicesCard = (props) => {
   //props
   const { src, title, description } = props;
 
-  //translation
+  // Використовуємо хук для перекладу
   const t = useTranslation();
+  // Використовуємо хук для перекладу
 
   return (
     <div className="services__card">
@@ -23,7 +24,7 @@ export const ServicesCard = (props) => {
         >
           {title}
         </Typography>
-        <Typography className="services__card-text" tag="p" center>
+        <Typography className="services__card-text" variant="p" tag="p" center>
           {description}
         </Typography>
         <Button

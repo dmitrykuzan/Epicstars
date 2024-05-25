@@ -8,4 +8,5 @@ const createTranslation = (locale) =>
 
 export const translations = {
   ru: createTranslation("ru"),
+  en: createTranslation("en"),
 };
